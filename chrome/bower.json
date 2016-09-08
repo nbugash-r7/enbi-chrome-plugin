@@ -1,0 +1,25 @@
+{
+  "name": "enbi-chrome-plugin",
+  "authors": [
+    "Nonico Bugash <nonico_bugash@rapid7.com>"
+  ],
+  "description": "Chrome plugin for the Enbi Project",
+  "main": "",
+  "keywords": [
+    "chrome",
+    "plugin",
+    "enbi"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

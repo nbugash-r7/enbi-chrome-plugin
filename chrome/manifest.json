@@ -1,0 +1,78 @@
+{
+  // Required
+  "name":"Enbi",
+  "manifest_version": 2,
+  "version": "1.0.0",
+
+  // Recommended
+  "description": "Chrome plugin for the Enbi Project",
+  "icons": {
+    "16":"images/icon.png",
+    "48":"images/icon.png",
+    "128":"images/icon.png"
+  },
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Enbi",
+    "default_popup": "browser-action.html"
+  },
+
+  // Optional
+  "author": "Nonico Bugash",
+  "background":{
+    "scripts":[
+      "background.js"
+    ],
+    // Recommended
+    "persistent": true
+  },
+  "options_ui": {
+    "page":"option.html",
+    "chrome_style": true
+  },
+  "permissions":[
+    "activeTab",
+    "alarms",
+    "background",
+    "bookmarks",
+    "browsingData",
+    "clipboardRead",
+    "clipboardWrite",
+    "contentSettings",
+    "contextMenus",
+    "cookies",
+    "debugger",
+    "declarativeContent",
+    "desktopCapture",
+    "downloads",
+    "fontSettings",
+    "gcm",
+    "geolocation",
+    "history",
+    "identity",
+    "idle",
+    "management",
+    "nativeMessaging",
+    "notifications",
+    "pageCapture",
+    "power",
+    "printerProvider",
+    "privacy",
+    "proxy",
+    "sessions",
+    "storage",
+    "system.cpu",
+    "system.display",
+    "system.memory",
+    "system.storage",
+    "tabCapture",
+    "tabs",
+    "topSites",
+    "tts",
+    "ttsEngine",
+    "unlimitedStorage",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking"
+  ]
+}
