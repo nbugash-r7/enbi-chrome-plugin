@@ -1,0 +1,28 @@
+{
+  "name": "enbi-chrome-plugin",
+  "version": "1.0.0",
+  "description": "Chrome plugin for the Enbi Project",
+  "main": "bootstrap.js",
+  "dependencies": {
+    "protractor": "^4.0.5"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0",
+    "prompt": "^1.0.0",
+    "exit": "latest"
+  },
+  "scripts": {
+    "npm:i": "npm install",
+    "npm:u": "npm update",
+    "bootstrap": "node bootstrap.js"
+  },
+  "keywords": [
+    "enbi",
+    "chrome",
+    "plugin"
+  ],
+  "author": "Nonico Bugash",
+  "license": "ISC"
+}
