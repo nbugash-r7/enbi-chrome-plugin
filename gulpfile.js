@@ -8,6 +8,8 @@ gulp.task('watch', function() {
     gulp.watch(['chrome/js/*.js'], ['install js']);
     gulp.watch(['chrome/background.js', 'chrome/content.js'],['install chrome scripts']);
     gulp.watch(['chrome/manifest.json'],['install manifest file']);
+    gulp.watch(['chrome/*.html'],['install html files']);
+    gulp.watch(['shared/images/*'],['install assets']);
 });
 gulp.task('install css', function() {
     gulp.src(['chrome/css/*.css'])
@@ -24,7 +26,18 @@ gulp.task('install chrome scripts', function() {
         .pipe(gulp.dest('extension'))
 });
 
+gulp.task('install html files', function() {
+    gulp.src(['chrome/*.html'])
+        .pipe(gulp.dest('extension'))
+});
+
 gulp.task('install manifest file', function() {
     gulp.src(['chrome/manifest.json'])
         .pipe(gulp.dest('extension'))
 });
+
+gulp.task('install assets', function() {
+    gulp.src(['shared/images/*'])
+        .pipe(gulp.dest('extension/images'))
+});
+

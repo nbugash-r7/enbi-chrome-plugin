@@ -7,16 +7,18 @@
     "protractor": "^4.0.5"
   },
   "devDependencies": {
+    "exit": "latest",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
     "gulp-inject": "^4.1.0",
-    "prompt": "^1.0.0",
-    "exit": "latest"
+    "npm": "^3.10.6",
+    "prompt": "^1.0.0"
   },
   "scripts": {
     "npm:i": "npm install",
     "npm:u": "npm update",
-    "bootstrap": "node bootstrap.js"
+    "bootstrap": "node bootstrap.js",
+    "nuke": "rm -rf extension/css/*.css extension/js/*.js extension/images/*.png extension/vendor/* extension/*.js extension/*.html extension/*.json"
   },
   "keywords": [
     "enbi",

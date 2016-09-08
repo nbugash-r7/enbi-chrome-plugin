@@ -2,6 +2,7 @@
  * Created by nbugash on 2016-09-08.
  */
 var fs = require('fs');
+var exec = require('child_process').exec;
 var prompt = require('prompt');
 var selectOptionSchema = {
     properties: {
